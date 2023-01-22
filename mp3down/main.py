@@ -31,8 +31,9 @@ playlist_id = get_playlist_id((input("Enter the playlist url: ")))
 
 
 # authentication codes from spotify API
-SPOTIPY_CLIENT_ID = '58db0e7ae228450ab8ba7341dd6c67de'
-SPOTIPY_CLIENT_SECRET = 'a72c3ce108664c30904266207dc39c4a'
+# Use spotify dev to get these details, very important
+SPOTIPY_CLIENT_ID = 'abc' 
+SPOTIPY_CLIENT_SECRET = 'def'
 
 def get_new_token():
     r = requests.request("GET", "https://open.spotify.com/")
